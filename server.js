@@ -12,6 +12,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(router);
 
-app.listen(port, () => {
+app.listen(port || 3001, () => {
 	console.log(`🚀 App is up and running on port ${port}...`);
 })
