@@ -1,10 +1,12 @@
 const express = require('express');
 const app = express();
 var bodyParser = require('body-parser')
-const port = 3001;
 const cors = require('cors');
 const helmet = require('helmet');
 const router = require('./router');
+require('dotenv').config();
+const port = provess.env.APP_PORT;
+
 
 app.use(cors());
 app.use(helmet());
